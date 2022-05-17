@@ -1,0 +1,16 @@
+.main{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @include mixin.breackpoint(tablet){
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+        @include mixin.breackpoint(laptop){
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+    }
+    @include mixin.breackpoint(desktop){
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
