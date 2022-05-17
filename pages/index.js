@@ -46,7 +46,7 @@ export default function Home() {
                        height={1000}
                        Layout="rasponsive"
                       />
-                      <Heading>Project 2 title</Heading>
+                      <Heading level="3">Project 2 title</Heading>
                       <Paragraph>
                               <Link href="/projects/project-2-title">
                               <a>
@@ -63,7 +63,7 @@ export default function Home() {
                        height={1000}
                        Layout="rasponsive"
                       />
-                      <Heading>Project 3 title</Heading>
+                      <Heading level="3">Project 3 title</Heading>
                       <Paragraph>
                               <Link href="/projects/project-3-title">
                               <a>
