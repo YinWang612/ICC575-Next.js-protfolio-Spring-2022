@@ -1,0 +1,29 @@
+@use '../sass/abstracts/mixin';
+
+.nav{
+    //background-color: lightgreen;
+    display: none;
+    @include mixin.breakpoint(laptop){
+        display: block;
+    }
+    .list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        .listItem{
+            a{
+                padding: 1rem;
+                display: block;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                &:hover,&focus{
+                    color: gray;
+                }
+            }
+
+        }
+    }
+}

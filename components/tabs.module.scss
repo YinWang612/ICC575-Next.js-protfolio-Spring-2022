@@ -1,0 +1,22 @@
+.tabs{
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+    .tabItem{
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: gray;
+        padding: 1rem;
+        cursor: pointer;
+        &.active{
+            color: black;
+            border-bottom: 3px solid red;
+        }
+    }
+}

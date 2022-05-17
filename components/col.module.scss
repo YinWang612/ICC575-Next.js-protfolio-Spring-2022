@@ -1,0 +1,42 @@
+@use '../sass/abstracts/mixin';
+
+$devices:xs,sm,md,lg;
+
+.col{
+    //background-color:bisque;
+    width: 100%;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @each $devices in $devices{
+        @include mixin.breakpoint($devices){
+            @for $i from 1 through 12 {
+                &.col-#{$devices}-#{$i}{
+                    width: calc(100% * (#{$i}/12));
+                }
+            }
+
+        }//mixin
+    }//devices fot loop
+    &.col-2{
+        width: calc(100% * 2/12);
+    }
+    &.col-3{
+        width: calc(100% * 3/12);
+    }
+    &.col-4{
+        width: calc(100% * 4/12);
+    }
+    @include mixin.breakpoint(sm){
+        &.col-2{
+            width: calc(100% * 2/12);
+        }
+        &.col-3{
+            width: calc(100% * 3/12);
+        }
+        &.col-4{
+            width: calc(100% * 4/12);
+
+    }
+}
+@include mixin.textAligns();
+}

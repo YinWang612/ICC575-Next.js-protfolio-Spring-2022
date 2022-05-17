@@ -1,0 +1,12 @@
+@use '../abstracts/mixin';
+.mobile-only{
+    @include mixin.breakpoint(tablet){
+        display: none;
+    }
+}
+.desktop-only{
+    display: none;
+    @include mixin.breakpoint(laptop){
+        display: block;
+    }
+}
